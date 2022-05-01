@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block base %}
+
+  <div id="index-banner" class="parallax-container">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center teal-text text-darken-2">LMS (52 & 101)</h1>
+        <div class="row center">
+          <h5 class="header col s12 dark">The best library management system ever</h5>
+        </div>
+        <div class="row center">
+          <a href="{% url 'library:books' %}" id="download-button" class="btn waves-effect waves-light lime">Browse
+            <i class="material-icons right">cloud</i>
+          </a>
+          <a href="{% url 'library:signup' %}" id="download-button" class="btn waves-effect waves-light lime">Sign Up
+            <i class="material-icons right">send</i>
+          </a>
+        </div>
+        <br><br>
+
+      </div>
+    </div>
+    <div class="parallax"><img src="/static/pic/lms.jpg" alt="Unsplashed background img 1"></div>
+  </div>
+
+  <div class="container">
+    <div class="section">
+
+      <!--   Icon Section   -->
+      <div class="row">
+
+      </div>
+
+    </div>
+  </div>
+
+  <div class="parallax-container valign-wrapper">
+    <div class="section no-pad-bot">
+      <div class="container">
+        <div class="row center">
+          <h5 class="header col s12 light">Arsh&Bia Library</h5>
+        </div>
+      </div>
+    </div>
+    <div class="parallax"><img src="/static/pic/AB1.jpg" alt="Unsplashed background img 3"></div>
+  </div>
+
+  <footer class="page-footer teal">
+    <div class="container">
+      <div class="row">
+        <div class="col l9 s12">
+          <h5 class="white-text">LMS</h5>
+          <p class="grey-text text-lighten-4">Welcome to my Database CEP project Library Managment System!</p>
+
+
+        </div>
+        <div class="col 13 s16">
+          <h5 class="white-text">Connect</h5>
+
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">Made by <a class="brown-text text-lighten-3">Arshman & Bareera </a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="/static/js/jquery-3.3.1.min.js"></script>
+  <script src="/static/js/materialize.js"></script>
+  <script src="/static/js/init.js"></script>
+
+{% endblock %}
